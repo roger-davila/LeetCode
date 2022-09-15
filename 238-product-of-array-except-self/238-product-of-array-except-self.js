@@ -13,7 +13,7 @@ var productExceptSelf = function(nums) {
     }
     
     for (let j = nums.length - 1; j >= 0; j--) {
-        results[j]*=postfixProduct;
+        results[j] *= postfixProduct;
         postfixProduct *= nums[j];
     }
     
